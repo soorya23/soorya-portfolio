@@ -4,7 +4,7 @@ import { useEffect, useRef } from 'react';
 import Typewriter from 'typewriter-effect/dist/core';
 
 export default function Page() {
-  const typewriterRef = useRef(null);
+  const typewriterRef = useRef<HTMLSpanElement | null>(null);
 
   useEffect(() => {
     const typed = new Typewriter(typewriterRef.current, {
